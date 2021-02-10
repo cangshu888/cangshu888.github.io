@@ -1,0 +1,78 @@
+.topBar {
+    text-align: center;
+    font-size: 36px;
+    color: #121dfc;
+    font-weight: 600;
+}
+
+.navBar {
+    width: 100%;
+    background-color: #ffecc2;
+    height: 30px;
+    font-size: 20px;
+}
+
+.image {
+    width: 800px;
+    height: 500px;
+    margin-left: 100px;
+}
+
+.cuisinesTitle {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    text-decoration: underline;
+    color: #ad03fc;
+}
+
+.firstRow {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.firstImage {
+    width: 350px;
+    height: 300px;
+    border: 15px solid #fadcfa;
+    margin-left: 100px;
+    position: relative;
+    float: left;
+}
+
+.firstDiv {
+    width: 350px;
+    height: 300px;
+    margin-left: 70px;
+    margin-top: 120px;
+    display: inline-block;
+}
+
+.title {
+    font-weight: 550;
+    color: #2d3af7;
+}
+
+.secondImage {
+    width: 350px;
+    height: 300px;
+    border: 15px solid #63dbff;
+    margin-left: 70px;
+    display: inline-block;
+}
+
+.secondDiv {
+    width: 350px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 120px;
+    position: relative;
+    float: left;
+}
+
+.secondRow {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
