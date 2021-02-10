@@ -1,5 +1,5 @@
 .topBar {
-    text-align: center;
+    margin-left: 400px;
     font-size: 36px;
     color: #121dfc;
     font-weight: 600;
@@ -19,7 +19,7 @@
 }
 
 .cuisinesTitle {
-    text-align: center;
+    margin-left: 400px;
     font-size: 30px;
     margin-top: 20px;
     text-decoration: underline;
