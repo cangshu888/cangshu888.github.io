@@ -4,10 +4,10 @@ var INDEX;
 
 document.addEventListener("DOMContentLoaded", async function() {
     document.getElementById('top').addEventListener('click', function(){
-        window.location.href = 'http://localhost:5000/';
+        window.location.href = 'https://csci571hw6-306919.uc.r.appspot.com/';
     });
     document.getElementById('bottom').addEventListener('click', function(){
-        window.location.href = 'http://localhost:5000/search';
+        window.location.href = 'https://csci571hw6-306919.uc.r.appspot.com/search';
     });
 
     if (document.getElementById('searchButton'))
