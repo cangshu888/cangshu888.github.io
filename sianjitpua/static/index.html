@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topBar">
+        <div style="float: left; width: 40%">The Movie DB</div>
+        <div class="gradient"></div>
+    </div>
+    <div class="sideBar">
+        <div class="sideBarLeft"></div>
+        <div class="sideBarRight">
+            <div class="topTab" id="top">
+                Home
+                <i class="material-icons innerRight">arrow_right_alt</i>
+            </div>
+            <div class="bottomTab" id="bottom">
+                <a class="innerLeft">Search</a>
+                <i class="material-icons innerRight">arrow_right_alt</i>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="trending">
+            <div class="divTitle">Trending Movies</div>
+            <div class="divImageWrapper">
+                <img src="static/img/movie-placeholder.jpg" id="trendingImage">
+                <div class="imageBottom" id="trendingTitle"></div>
+            </div>
+        </div>
+        <div class="buffer"></div>
+        <div class="trending">
+            <div class="divTitle">TV Shows On-Air Today</div>
+            <div class="divImageWrapper">
+                <img src="static/img/movie-placeholder.jpg" id="airImage">
+                <div class="imageBottom" id="airTitle"></div>
+            </div>
+        </div>
+        <div class="buffer"></div>
+        <div class="bottom">
+            <div class="bottomText">
+                <a>Designed and developed by Akansha, Pranav & Yash</a><br>
+                <a>Powered by TMDB</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/app.js"></script>
+    
+</body>
+
+</html>
