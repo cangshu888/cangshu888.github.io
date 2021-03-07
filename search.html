@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topBar">
+        <div style="float: left; width: 40%">The Movie DB</div>
+        <div class="gradient"></div>
+    </div>
+    <div class="sideBar" id="sideBar">
+        <div class="sideBarLeft"></div>
+        <div class="sideBarRight">
+            <div class="topTab2" id="top">
+                Home
+                <i class="material-icons innerRight">arrow_right_alt</i>
+            </div>
+            <div class="bottomTab2" id="bottom">
+                <a class="innerLeft">Search</a>
+                <i class="material-icons innerRight">arrow_right_alt</i>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="search">
+            <div class="searchTitle">Search</div>
+            <div class="searchContent">
+                <div class="buffer">
+                    <a>Keyword: </a>
+                    <input type="text" name="keyword" id="keyword"/>
+                </div>
+                <a>Category: </a>
+                <select name="category" id="category">
+                    <option value=""></option>
+                    <option value="movies">Movies</option>
+                    <option value="tv">TV Shows</option>
+                    <option value="both">Movies and TV Shows</option>
+                </select>
+                <div class="buttons">
+                    <button type="button" id="searchButton">Search</button>
+                    <button type="button" id="clearButton">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div id="noResults" style="display: none; color: white; margin-top: 100px;">No results found.</div>
+        <div id="showingResults" style="display: none; color: white; margin-top: 100px;">Showing results...</div>
+        <div class="searchResults" id="searchResults"></div>
+        <div class="bottom">
+            <div class="bottomText">
+                <a>Designed and developed by Akansha, Pranav & Yash</a><br>
+                <a>Powered by TMDB</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/app.js"></script>
+    
+    <div class="modal" id="modal">
+        <div class="modalCloseBar"><a id="modalClose">X</a></div>
+        <div id="detailsImageDiv">
+            <img id="detailsImage">
+        </div>
+        <div id="detailsFirstRow"><a id="detailsTitle"></a><a id="detailsInfoIcon"></a></div>
+        <div id="detailsSecondRow"></div>
+        <div id="detailsThirdRow"><a id="left"></a><a id="right"></a></div>
+        <div id="detailsOverview"></div>
+        <div id="detailsSpokenLanguages"></div>
+        <p id="cast">Cast</p>
+        <div id="detailsCastWrapper">
+            <div id="detailsCastRow1" class="detailsCastRow">
+                <div id="detailsCast1" class="detailsCast">
+                    <img id="detailsCastImage1" src="static/img/person-placeholder.png" class="detailsCastImage">
+                    <div id="detailsCastName1">temp</div>
+                    <a>AS</a><br>
+                    <div id="detailsCastRole1">temp</div>
+                </div>
+                <div id="detailsCast2" class="detailsCast">
+                    <img id="detailsCastImage2" src="static/img/person-placeholder.png" class="detailsCastImage">
+                    <div id="detailsCastName2"></div>
+                    <a>AS</a><br>
+                    <div id="detailsCastRole2"></div>
+                </div>
+                <div id="detailsCast3" class="detailsCast">
+                    <img id="detailsCastImage3" src="static/img/person-placeholder.png" class="detailsCastImage">
+                    <div id="detailsCastName3"></div>
+                    <a>AS</a><br>
+                    <div id="detailsCastRole3"></div>
+                </div>
+                <div id="detailsCast4" class="detailsCast">
+                    <img id="detailsCastImage4" src="static/img/person-placeholder.png" class="detailsCastImage">
+                    <div id="detailsCastName4"></div>
+                    <a>AS</a><br>
+                    <div id="detailsCastRole4"></div>
+                </div>
+            </div>
+            <div id="detailsCastRow2" class="detailsCastRow">
+                <div id="detailsCast5" class="detailsCast">
+                    <img id="detailsCastImage5" src="static/img/person-placeholder.png" class="detailsCastImage">
+                    <div id="detailsCastName5">temp</div>
+                    <a>AS</a><br>
+                    <div id="detailsCastRole5">temp</div>
+                </div>
+                <div id="detailsCast6" class="detailsCast">
+                    <img id="detailsCastImage6" src="static/img/person-placeholder.png" class="detailsCastImage">
+                    <div id="detailsCastName6"></div>
+                    <a>AS</a><br>
+                    <div id="detailsCastRole6"></div>
+                </div>
+                <div id="detailsCast7" class="detailsCast">
+                    <img id="detailsCastImage7" src="static/img/person-placeholder.png" class="detailsCastImage">
+                    <div id="detailsCastName7"></div>
+                    <a>AS</a><br>
+                    <div id="detailsCastRole7"></div>
+                </div>
+                <div id="detailsCast8" class="detailsCast">
+                    <img id="detailsCastImage8" src="static/img/person-placeholder.png" class="detailsCastImage">
+                    <div id="detailsCastName8"></div>
+                    <a>AS</a><br>
+                    <div id="detailsCastRole8"></div>
+                </div>
+            </div>
+        </div>
+        <p id="reviews">Reviews</p>
+        <div id="review1">
+            <div id="reviewFirstRow1"><a id="reviewUsername1"></a><a id="reviewDate1"></a></div><br>
+            <div id="reviewRating1"></div>
+            <div id="reviewContent1"></div>
+        </div>
+        <div id="review2">
+            <div id="reviewFirstRow2"><a id="reviewUsername2"></a><a id="reviewDate2"></a></div><br>
+            <div id="reviewRating2"></div>
+            <div id="reviewContent2"></div>
+        </div>
+        <div id="review3">
+            <div id="reviewFirstRow3"><a id="reviewUsername3"></a><a id="reviewDate3"></a></div><br>
+            <div id="reviewRating3"></div>
+            <div id="reviewContent3"></div>
+        </div>
+        <div id="review4">
+            <div id="reviewFirstRow4"><a id="reviewUsername4"></a><a id="reviewDate4"></a></div><br>
+            <div id="reviewRating4"></div>
+            <div id="reviewContent4"></div>
+        </div>
+        <div id="review5">
+            <div id="reviewFirstRow5"><a id="reviewUsername5"></a><a id="reviewDate5"></a></div><br>
+            <div id="reviewRating5"></div>
+            <div id="reviewContent5"></div>
+        </div>
+    </div>
+</body>
+
+</html>
